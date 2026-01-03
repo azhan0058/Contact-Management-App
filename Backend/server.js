@@ -17,5 +17,5 @@ app.listen(process.env.port,async()=>{
     } catch (error) {
       console.log("Server is not connected with DB")
     }
-    console.log(`Server is listening on Port : ${process.env.port} and Url http://localhost:${process.env.port}`)
+    console.log(`Server is listening on Port : ${process.env.port} `)
 })

@@ -29,15 +29,3 @@ server.listen(PORT, () => console.log(`Server started at http://localhost:${PORT
 
 
 
-
-
-
-app.listen(process.env.port,async()=>{
-    try {
-      await connection
-      console.log("Server is connected with DB")
-    } catch (error) {
-      console.log("Server is not connected with DB")
-    }
-    console.log(`Server is listening on Port : ${process.env.port} `)
-})

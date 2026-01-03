@@ -16,7 +16,7 @@ app.use("/api",ContactRouter)
 
 connectDB();
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.port === "production") {
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 	// react app

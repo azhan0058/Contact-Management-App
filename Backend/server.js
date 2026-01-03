@@ -16,6 +16,22 @@ app.use("/api",ContactRouter)
 
 connectDB();
 
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+	// react app
+	app.get("*", (req, res) => {
+		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+	});
+}
+
+server.listen(PORT, () => console.log(`Server started at http://localhost:${PORT}`));
+
+
+
+
+
+
 app.listen(process.env.port,async()=>{
     try {
       await connection

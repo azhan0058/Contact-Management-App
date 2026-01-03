@@ -1,4 +1,4 @@
-import path from "path';
+import path from "path";
 import connectDB from "./config/db.js";
 const express = require("express")
 import dotnet from "dotnet";

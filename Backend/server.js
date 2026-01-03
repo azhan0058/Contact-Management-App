@@ -1,12 +1,11 @@
 import path from "path";
 import connectDB from "./config/db.js";
 const express = require("express")
-import dotnet from "dotnet";
 const app = express()
 const ContactRouter = require("./routes/Contact.routes.js")
 const cors = require("cors")
 
-dotenv.config();
+
 
 const PORT = process.env.port || 5000;
 const __dirname = path.resolve();

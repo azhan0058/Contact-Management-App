@@ -3,7 +3,6 @@ import connectDB from "./config/db.js";
 const express = require("express")
 import dotnet from "dotnet";
 const app = express()
-const connection = require("./config/db.js")
 const ContactRouter = require("./routes/Contact.routes.js")
 const cors = require("cors")
 

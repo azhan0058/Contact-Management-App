@@ -1,10 +1,10 @@
-import path from "path";
-import connectDB from "./config/db.js";
+
 const express = require("express")
 const app = express()
 const ContactRouter = require("./routes/Contact.routes.js")
 const cors = require("cors")
-
+import path from "path";
+import connectDB from "./config/db.js";
 
 
 const PORT = process.env.port || 5000;
